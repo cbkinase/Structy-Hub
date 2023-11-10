@@ -1,8 +1,7 @@
 #include <string>
 ​
 std::string greet(std::string s) {
-  std::cout << "hey " << s << std::endl
-  return;
+  return "hey " + s;
 }
 ​
 ​
