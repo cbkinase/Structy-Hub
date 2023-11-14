@@ -4,6 +4,7 @@
 #     self.next = None
 ​
 def reverse_list(head):
+  pass
   prev_node = None
   curr = head
   nxt = curr.next
