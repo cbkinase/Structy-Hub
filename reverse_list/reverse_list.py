@@ -5,6 +5,7 @@
 ​
 def reverse_list(head):
   pass
+  pass
   prev_node = None
   curr = head
   nxt = curr.next
