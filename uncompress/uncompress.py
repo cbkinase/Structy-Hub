@@ -14,8 +14,3 @@ def uncompress(s, res=""):
     return res
   
   return uncompress(s[j+1:], res)
-  
-  
-  
-r = uncompress("2h5y1g2q")
-print(r)
