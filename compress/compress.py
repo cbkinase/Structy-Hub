@@ -17,4 +17,3 @@ def compress(s):
             i = j
     
     return "".join(result)
-    
