@@ -8,4 +8,3 @@ def pair_product(numbers, target_product):
             return prev[counterpart], idx
         else:
             prev[num] = idx
-            
