@@ -4,6 +4,7 @@ class Node:
     self.next = None
 ​
 def merge_lists(head_1, head_2):
+  pass # test test
   current1 = head_1
   current2 = head_2
   dummy_head = Node(val=None)
