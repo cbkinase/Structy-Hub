@@ -1,7 +1,6 @@
 def pair_product(numbers, target_product):
-    pass
     prev = {}
-    
+  
     for idx, num in enumerate(numbers):
         counterpart = int(target_product / num)
         
