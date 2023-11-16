@@ -10,4 +10,3 @@ def five_sort(nums):
         else:
             curr_ptr += 1
     return nums
-  
