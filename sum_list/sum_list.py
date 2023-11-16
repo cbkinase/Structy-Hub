@@ -11,3 +11,4 @@ def sum_list(head):
     sum += curr.val
     curr = curr.next
   return sum
+​
