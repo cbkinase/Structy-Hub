@@ -23,5 +23,3 @@ def longest_streak(head):
     head = head.next
   
   return longest_streak
-    
-​
