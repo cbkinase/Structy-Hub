@@ -1,5 +1,4 @@
 def pair_sum(numbers, target_sum):
-    pass
     pairs = {}
     
     for idx, num in enumerate(numbers):
