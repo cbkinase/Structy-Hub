@@ -20,3 +20,4 @@ def zipper_lists(head_1, head_2):
     prev.next = detached
     
   return head_1
+​
