@@ -8,4 +8,5 @@ def pair_sum(numbers, target_sum):
             return pairs[complement], idx
         else:
             pairs[num] = idx
-            
+​
+            pass
