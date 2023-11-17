@@ -7,3 +7,4 @@ def intersection(a, b):
 pass
 a = 1
 b = 2
+c = 3
