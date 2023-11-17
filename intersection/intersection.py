@@ -5,3 +5,4 @@ def intersection(a, b):
   
   
 pass
+a = 1
