@@ -12,3 +12,4 @@ def get_node_value(head, index):
       return curr.val
     curr_idx += 1
     curr = curr.next
+    pass
