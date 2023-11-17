@@ -10,3 +10,4 @@ def linked_list_values(head):
         values.append(curr.val)
         curr = curr.next
     return values
+  
