@@ -7,12 +7,10 @@ class Node:
 def depth_first_values(root, vals=None):
   if vals is None:
     vals = []
-  
-  if root is None:
-    return vals
-  
-  vals.append(root.val)
-  depth_first_values(root.left, vals)
-  depth_first_values(root.right, vals)
-    
+​
+  if root is not None:
+    vals.append(root.val)
+    depth_first_values(root.left, vals)
+    depth_first_values(root.right, vals)
+​
   return vals
