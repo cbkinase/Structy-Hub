@@ -12,10 +12,7 @@ def depth_first_values(root, vals=None):
     return vals
   
   vals.append(root.val)
-  
-  if root.left is not None:
-    depth_first_values(root.left, vals)
-  if root.right is not None:
-    depth_first_values(root.right, vals)
+  depth_first_values(root.left, vals)
+  depth_first_values(root.right, vals)
     
   return vals
