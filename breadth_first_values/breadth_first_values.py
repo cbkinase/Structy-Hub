@@ -1,3 +1,5 @@
+from collections import deque
+​
 # class Node:
 #   def __init__(self, val):
 #     self.val = val
@@ -9,10 +11,10 @@ def breadth_first_values(root):
     return []
   
   vals = []
-  queue = [root]
+  queue = deque([root])
   
   while len(queue) > 0:
-    current = queue.pop(0)
+    current = queue.popleft()
     vals.append(current.val)
     
     if current.left:
