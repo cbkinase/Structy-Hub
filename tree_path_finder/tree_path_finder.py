@@ -10,26 +10,22 @@ def path_finder(root, target):
         return None
 ​
     stack = [root]
-    path = [root.val]
     visited = set()
 ​
     while stack:
         current = stack[-1]
 ​
         if current.val == target:
-            return path
+            return [node.val for node in stack]
 ​
         if current.left and current.left not in visited:
             stack.append(current.left)
-            path.append(current.left.val)
             visited.add(current.left)
         elif current.right and current.right not in visited:
             stack.append(current.right)
-            path.append(current.right.val)
             visited.add(current.right)
         else:
             stack.pop()
-            path.pop()
 ​
     return None
 ​
