@@ -20,7 +20,6 @@ def shortest_path(edges, node_A, node_B):
   queue = deque([(node_A, 0)])
   
   while queue:
-    print(queue)
     node, depth = queue.popleft()
     
     if node == node_B:
