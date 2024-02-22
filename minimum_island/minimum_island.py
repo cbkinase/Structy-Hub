@@ -32,16 +32,3 @@ def find_island_size(grid, r, c, visited):
                 queue.append((x, y))
                 visited.add((x, y))
     return count
-​
-​
-def is_valid_tile(grid, r, c):
-    if r not in range(len(grid)):
-        return False
-    if c not in range(len(grid[0])):
-        return False
-    if grid[r][c] == "W":
-        return False
-    return True
-​
-​
-def get_neighbors(grid, r, c):
