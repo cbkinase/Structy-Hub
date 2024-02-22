@@ -1,4 +1,3 @@
-
 from math import inf
 from collections import deque
 ​
@@ -22,19 +21,27 @@ def minimum_island(grid):
 ​
 ​
 def find_island_size(grid, r, c, visited):
-    count = 1
+    count = 0
     queue = deque([(r, c)])
     visited.add((r, c))
     while queue:
         row, col = queue.popleft()
+        count += 1
         for x, y in get_neighbors(grid, row, col):
             if (x, y) not in visited:
                 queue.append((x, y))
                 visited.add((x, y))
-                count += 1
     return count
 ​
 ​
 def is_valid_tile(grid, r, c):
     if r not in range(len(grid)):
         return False
+    if c not in range(len(grid[0])):
+        return False
+    if grid[r][c] == "W":
+        return False
+    return True
+​
+​
+def get_neighbors(grid, r, c):
